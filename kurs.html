@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="noindex">
+    <title>Kurs wideo — 14 lekcji</title>
+    <link rel="stylesheet" href="styles.css" />
+    <style>
+        body {
+            min-height: 100vh;
+            background: #f7fbff;
+            color: #0f172a;
+        }
+        .course-hero {
+            padding: calc(var(--nav-height) + 32px) 20px 30px;
+            text-align: center;
+            background: linear-gradient(180deg, #ffffff 0%, #dbeafe 100%);
+            border-bottom: 1px solid rgba(59, 130, 246, 0.14);
+        }
+        .course-hero h1 {
+            font-size: clamp(2.5rem, 4vw, 3.4rem);
+            margin: 0 auto 18px;
+            max-width: 860px;
+            line-height: 1.05;
+        }
+        .course-hero p {
+            margin: 0 auto;
+            max-width: 760px;
+            color: #475569;
+            font-size: 1.05rem;
+            line-height: 1.75;
+        }
+        .course-hero .note-block {
+            margin-top: 22px;
+            color: #64748b;
+            font-size: 0.98rem;
+            max-width: 720px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .course-videos {
+            padding: 34px 0 60px;
+        }
+        .video-grid {
+            display: grid;
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+            gap: 24px;
+        }
+        .video-card {
+            background: #ffffff;
+            border-radius: 24px;
+            overflow: hidden;
+            box-shadow: 0 24px 60px rgba(15, 23, 42, 0.08);
+            border: 1px solid rgba(148, 163, 184, 0.2);
+        }
+        .video-card iframe {
+            width: 100%;
+            aspect-ratio: 16 / 9;
+            border: 0;
+            display: block;
+        }
+        .video-card h3 {
+            margin: 18px 18px 20px;
+            font-size: 1.05rem;
+            color: #0f172a;
+        }
+        .subscriber-note {
+            max-width: 760px;
+            margin: 0 auto;
+            padding-top: 18px;
+            color: #475569;
+            text-align: center;
+            line-height: 1.75;
+        }
+        @media (max-width: 960px) {
+            .video-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+        @media (max-width: 680px) {
+            .course-hero {
+                padding-top: calc(var(--nav-height) + 24px);
+            }
+            .course-hero h1 {
+                font-size: 2.3rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="course-hero">
+        <div class="container">
+            <h1>Kurs wideo z funkcji liniowej — 14 lekcji</h1>
+            <p>Witaj! Ta strona zawiera tylko nagrania wideo w trybie niepublicznym. Link otrzymałeś po opłaceniu dostępu Stripe.</p>
+            <p class="note-block">Żadnych innych informacji tu nie znajdziesz — tylko czytelny dostęp do wszystkich filmów.</p>
+        </div>
+    </header>
+
+    <main class="course-videos">
+        <div class="container video-grid">
+            <div class="video-card">
+                <iframe src="https://www.youtube.com/embed/_V6EgKFLDFw" title="Wideo 1" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <h3>Wideo 1</h3>
+            </div>
+            <div class="video-card">
+                <iframe src="https://www.youtube.com/embed/mxKMgu92bzI" title="Wideo 2" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <h3>Wideo 2</h3>
+            </div>
+            <div class="video-card">
+                <iframe src="https://www.youtube.com/embed/ah-2xPD6w7A" title="Wideo 3" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <h3>Wideo 3</h3>
+            </div>
+            <div class="video-card">
+                <iframe src="https://www.youtube.com/embed/eqt6y23_q70" title="Wideo 4" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <h3>Wideo 4</h3>
+            </div>
+            <div class="video-card">
+                <iframe src="https://www.youtube.com/embed/YL6C9spHDg0" title="Wideo 5" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <h3>Wideo 5</h3>
+            </div>
+            <div class="video-card">
+                <iframe src="https://www.youtube.com/embed/gznXriKqNxs" title="Wideo 6" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <h3>Wideo 6</h3>
+            </div>
+            <div class="video-card">
+                <iframe src="https://www.youtube.com/embed/A45KN-JP7KI" title="Wideo 7" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <h3>Wideo 7</h3>
+            </div>
+            <div class="video-card">
+                <iframe src="https://www.youtube.com/embed/-FEREh-uhHo" title="Wideo 8" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <h3>Wideo 8</h3>
+            </div>
+            <div class="video-card">
+                <iframe src="https://www.youtube.com/embed/DfGmcKKZAhg" title="Wideo 9" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <h3>Wideo 9</h3>
+            </div>
+            <div class="video-card">
+                <iframe src="https://www.youtube.com/embed/4NBpzyupRno" title="Wideo 10" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <h3>Wideo 10</h3>
+            </div>
+            <div class="video-card">
+                <iframe src="https://www.youtube.com/embed/P4thjj7W_Io" title="Wideo 11" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <h3>Wideo 11</h3>
+            </div>
+            <div class="video-card">
+                <iframe src="https://www.youtube.com/embed/I6ovytSh1tA" title="Wideo 12" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <h3>Wideo 12</h3>
+            </div>
+            <div class="video-card">
+                <iframe src="https://www.youtube.com/embed/YzuRLOcwnhA" title="Wideo 13" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <h3>Wideo 13</h3>
+            </div>
+            <div class="video-card">
+                <iframe src="https://www.youtube.com/embed/Zqo3rd1kX8I" title="Wideo 14" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <h3>Wideo 14</h3>
+            </div>
+        </div>
+        <p class="subscriber-note">Masz dostęp do wszystkich filmów. Ten adres otrzymałeś po opłaceniu subskrypcji Stripe.</p>
+    </main>
+</body>
+</html>

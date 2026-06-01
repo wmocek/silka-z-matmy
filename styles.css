@@ -116,6 +116,64 @@ nav {
     transform: translateY(-3px);
 }
 
+.nav-links li {
+    position: relative;
+}
+
+.nav-links .submenu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    min-width: 220px;
+    background: white;
+    border-radius: 14px;
+    box-shadow: 0 18px 50px rgba(15, 23, 42, 0.12);
+    padding: 12px 0;
+    display: none;
+    z-index: 10;
+}
+
+.nav-links .nav-dropdown:hover .submenu,
+.nav-links .nav-dropdown:focus-within .submenu {
+    display: block;
+}
+
+.nav-links .submenu li {
+    margin: 0;
+}
+
+.nav-links .submenu a {
+    display: block;
+    padding: 10px 18px;
+    color: var(--text-color);
+    font-weight: 500;
+}
+
+.nav-links .submenu a:hover {
+    background: rgba(59, 130, 246, 0.08);
+    color: var(--secondary-color);
+    transform: none;
+}
+
+@media (max-width: 700px) {
+    .nav-links .submenu {
+        position: static;
+        box-shadow: none;
+        background: transparent;
+        padding: 0;
+        display: block;
+    }
+
+    .nav-links .nav-dropdown:hover .submenu,
+    .nav-links .nav-dropdown:focus-within .submenu {
+        display: block;
+    }
+
+    .nav-links .submenu a {
+        padding-left: 24px;
+    }
+}
+
 /* Basic styling for special nav buttons */
 .nav-links a[href="#testimonials"] {
     background: var(--secondary-color);

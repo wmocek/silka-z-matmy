@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dziękujemy za zakup</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .success-page {
+            min-height: 80vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 60px 20px;
+            text-align: center;
+        }
+        .success-card {
+            max-width: 760px;
+            background: white;
+            border-radius: 24px;
+            padding: 40px 36px;
+            box-shadow: 0 28px 70px rgba(15, 23, 42, 0.12);
+            border: 1px solid rgba(148, 163, 184, 0.16);
+        }
+        .success-card h1 {
+            margin-bottom: 18px;
+            font-size: clamp(2rem, 3vw, 2.7rem);
+        }
+        .success-card p {
+            margin: 16px auto;
+            max-width: 680px;
+            line-height: 1.7;
+            color: #475569;
+            font-size: 1rem;
+        }
+        .success-card .button {
+            display: inline-block;
+            margin-top: 24px;
+            background: #2563eb;
+            color: white;
+            padding: 14px 28px;
+            border-radius: 12px;
+            text-decoration: none;
+            font-weight: 700;
+            transition: transform .18s ease, box-shadow .18s ease;
+        }
+        .success-card .button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 16px 30px rgba(37, 99, 235, 0.24);
+        }
+        .success-note {
+            margin-top: 26px;
+            color: #475569;
+            font-size: 0.98rem;
+            line-height: 1.7;
+        }
+    </style>
+</head>
+<body>
+    <div class="success-page">
+        <div class="success-card">
+            <h1>Dziękujemy za zakup!</h1>
+            <p>Twoja płatność została przyjęta, a dostęp do kursu został aktywowany.</p>
+            <p>Kliknij przycisk poniżej, aby przejść do strony z filmami i od razu rozpocząć naukę.</p>
+            <a class="button" href="kurs.html">Przejdź do kursu wideo</a>
+            <p class="success-note">Na adres email podany podczas płatności Stripe wysłaliśmy potwierdzenie zamówienia. Jeśli nie widzisz wiadomości, sprawdź folder SPAM lub oferty.</p>
+        </div>
+    </div>
+</body>
+</html>

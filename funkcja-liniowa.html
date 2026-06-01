@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Funkcja liniowa bez chaosu</title>
+<link rel="stylesheet" href="styles.css">
+<style>
+/* Minimalne dopasowania specyficzne dla tej podstrony */
+.product-hero{padding:calc(var(--nav-height) + 20px) 20px 48px;text-align:center}
+.box{background:white;border-radius:12px;padding:24px;margin-top:20px;box-shadow:0 6px 20px rgba(0,0,0,0.06)}
+.price{font-size:40px;font-weight:700;margin:20px 0}
+.button{background:#111;color:#fff;padding:14px 28px;border-radius:10px;text-decoration:none}
+.subtitle{font-size:18px;color:#444;max-width:700px;margin:auto}
+.center{text-align:center}
+.footer{margin-top:40px;text-align:center;color:#666;font-size:14px}
+</style>
+</head>
+<body>
+
+    <nav>
+        <div class="container nav-bar">
+            <a class="logo" href="index.html" aria-label="Strona główna — Wojciech Mocek">
+                <img src="images/silka.jpg" alt="Logo" class="logo-image">
+            </a>
+            <div class="nav-links" role="navigation" aria-label="Nawigacja">
+                <ul>
+                    <li><a href="index.html">Start</a></li>
+                    <li><a href="index.html#services">Usługi</a></li>
+                    <li><a href="index.html#contact">Kontakt</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <section class="product-hero">
+            <h1>Funkcja liniowa bez chaosu</h1>
+            <p class="subtitle">2 godziny spokojnych wyjaśnień dla uczniów 1 klasy LO i technikum. Zrozum wykresy, wzory i zadania krok po kroku.</p>
+        </section>
+
+        <section class="box">
+            <h2>Dla kogo?</h2>
+            <ul>
+                <li>Nie rozumiesz funkcji liniowej</li>
+                <li>Myli Ci się a i b</li>
+                <li>Nie umiesz rysować wykresów</li>
+                <li>Na lekcji wszystko dzieje się za szybko</li>
+                <li>Chcesz nadrobić dział spokojnie od podstaw</li>
+            </ul>
+        </section>
+
+        <section class="box">
+            <h2>Co znajdziesz w środku?</h2>
+            <ul>
+                <li>8 krótkich nagrań video</li>
+                <li>Najważniejsze zadania krok po kroku</li>
+                <li>Proste tłumaczenie bez chaosu</li>
+                <li>PDF ze schematami i najczęstszymi błędami</li>
+                <li>Dostęp od razu po zakupie</li>
+            </ul>
+        </section>
+
+        <section class="box">
+            <h2>Efekt</h2>
+            <p>Po przerobieniu materiału:</p>
+            <ul>
+                <li>rozumiesz wzór funkcji liniowej,</li>
+                <li>umiesz narysować wykres,</li>
+                <li>potrafisz rozwiązać podstawowe zadania,</li>
+                <li>odzyskujesz spokój przed sprawdzianem.</li>
+            </ul>
+        </section>
+
+        <section class="box center">
+            <div class="price">79 PLN</div>
+            <!-- Ustaw w Stripe 'success_url' na /success.html, aby klient po zakupie trafił na stronę z potwierdzeniem -->
+            <a class="button" href="https://buy.stripe.com/28EeVd9BY6a21N3bX80ZW07">Uzyskaj dostęp</a>
+        </section>
+
+        <div class="footer">© Silka z Matmy</div>
+    </div>
+
+</body>
+</html>
